@@ -42,6 +42,7 @@ API key) and install the `.xpi` from `about:addons`.
 | Google | not tried | works | phone QR |
 | GitHub | not tried | works | phone QR |
 | Microsoft | not tried | works | phone QR |
+| Cloudflare | works | works | phone QR |
 
 Add a row (and any error message) when you try another site.
 
