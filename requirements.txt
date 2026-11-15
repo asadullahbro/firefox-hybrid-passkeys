@@ -1,0 +1,6 @@
+fido2==2.2.1
+cryptography
+websockets
+qrcode
+bleak
+cbor2

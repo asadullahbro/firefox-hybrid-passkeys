@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+node_modules/
+dist/
+signed/
+*.xpi
+host.log
+host/run.sh
+extension/.amo-upload-uuid

@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Passkey vault</title>
+<style>
+ body{font:14px system-ui,sans-serif;margin:0;padding:18px;background:#fff;color:#111}
+ h2{margin:0 0 6px;font-size:16px} p{color:#444;margin:6px 0 12px}
+ input{width:100%;box-sizing:border-box;padding:9px;margin:4px 0;border:1px solid #888;border-radius:6px;font:inherit}
+ button{padding:9px 14px;border-radius:6px;border:0;background:#0060df;color:#fff;font:inherit;cursor:pointer;margin-top:8px}
+ #err{color:#b00020;min-height:1.2em;margin-top:6px}
+</style></head><body>
+<h2 id="title"></h2><p id="hint"></p>
+<form id="f"><input id="p1" type="password" autocomplete="off" placeholder="Passphrase" autofocus>
+<input id="p2" type="password" autocomplete="off" placeholder="Repeat passphrase" hidden>
+<button type="submit" id="go"></button><div id="err"></div></form>
+<script src="unlock.js"></script></body></html>
