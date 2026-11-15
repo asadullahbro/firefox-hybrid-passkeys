@@ -34,10 +34,20 @@ Then load `extension/` via `about:debugging` -> This Firefox -> Load Temporary A
 yourself as an unlisted add-on (`npx web-ext sign --channel unlisted`, needs a free addons.mozilla.org
 API key) and install the `.xpi` from `about:addons`.
 
+## Tested sites
+
+| Site | Register | Sign in | Notes |
+|---|---|---|---|
+| webauthn.io | works | works | |
+| Google | not tried | works | phone QR |
+| GitHub | not tried | works | phone QR |
+
+Add a row (and any error message) when you try another site.
+
 ## Limits
 
 - Phones verify you themselves; PIN/UV tokens are not supported.
-- Only tested on webauthn.io and Google. Other sites may check details these don't.
+- Only tested on the sites listed above. Other sites may check details these don't.
 - The result object imitates `PublicKeyCredential`; sites that test `instanceof` may reject it.
 - Protocol revision 1 phones only.
 - Unaudited. The vault is PBKDF2-SHA256 (600k) + AES-GCM; use a long passphrase.
